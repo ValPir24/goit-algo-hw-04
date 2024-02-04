@@ -1,4 +1,4 @@
-def parse_input(user_input): # Parse input function
+def parse_input(user_input): # Parse input function 
     cmd, *args = user_input.split()
     cmd = cmd.strip().lower()
     return cmd, *args

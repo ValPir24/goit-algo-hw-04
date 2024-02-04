@@ -2,7 +2,7 @@ def total_salary(path):
     total = 0
     average = 0
     try: # Error handling
-        with open(path, mode = "r", encoding = 'utf-8') as file: # Opening file in read mode
+        with open(path, mode = "r", encoding = 'utf-8') as file: # Opening file in read mode 
             for count, line in enumerate(file.readlines()): # Loop by rows and counting
                 _,a = line.split(",") # Splitting each row by "," symbol
                 total+=int(a) # Salaries sum

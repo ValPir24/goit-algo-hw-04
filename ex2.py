@@ -1,7 +1,7 @@
 def get_cats_info(path):
     cats=[]
     try: # Error handling
-        with open(path, mode = "r", encoding='utf-8') as file: # Opening file in read mode
+        with open(path, mode = "r", encoding='utf-8') as file: # Opening file in read mode 
             for line in file.readlines(): # Loop by rows
                 id, name, age = line.split(",") # Splitting each row by "," symbol
                 cat = {"id": id, "name" : name, "age" : age.strip()} # Dict init of cat properties
